@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WBNetworkTools.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%@", [WBNetworkTools sharedTools]);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
